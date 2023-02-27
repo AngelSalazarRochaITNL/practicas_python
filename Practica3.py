@@ -5,4 +5,6 @@
 print("Escribe tu nombre; ")
 nombre = input()
 nombre = nombre[::-1]
-print(nombre)
+
+for l in nombre:
+    print(l)
