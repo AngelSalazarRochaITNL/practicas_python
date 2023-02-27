@@ -11,4 +11,4 @@ a = {
 def dictionarys(*dic):
     print(dic)
 
-dictionarys({"nombre":"Angel"}, {"nombre": "Slim"})
+print(dictionarys({"nombre":"Angel"}, {"nombre": "Slim"}))
