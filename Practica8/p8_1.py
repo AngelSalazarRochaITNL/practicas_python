@@ -77,3 +77,9 @@ class Usuario:
     @Ciudad.setter
     def Ciudad(self, u):
         self._ciudad = u
+
+
+    ## To string del usuario
+    def __str__(self):
+        return f"Usuario: {self._usuario}\nCurp: {self._curp}\nRol: {self._rol}\nNombre: {self._nombre}\nCiudad: {self._ciudad}"
+    

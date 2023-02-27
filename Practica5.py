@@ -2,13 +2,10 @@
 # Escribir una función que reciba n parámetros de llave valor e imprima la información en formato
 # “{llave}”: “{Valor}”
 
-a = {
-    "Nombre": "Angel",
-    "Apellidos": "Salazar Rocha",
-    "Edad": 23
-}
 
-def dictionarys(*dic):
-    print(dic)
+def imprimir_datos(nombre, **datos):
+    print("Nombre: {}".format(nombre))
+    for clave, valor in datos.items():
+        print("{}: {}".format(clave, valor))
 
-print(dictionarys({"nombre":"Angel"}, {"nombre": "Slim"}))
+imprimir_datos("Juan", edad=30, ciudad="Buenos Aires", profesion="Ingeniero")
