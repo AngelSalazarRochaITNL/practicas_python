@@ -1,5 +1,5 @@
 
-## una cadena a diccionario con su frecuencia
+## 4. una cadena a diccionario con su frecuencia
 
 dicStr = {}
 
