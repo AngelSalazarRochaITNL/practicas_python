@@ -2,7 +2,7 @@
 ## una cadena a diccionario con su frecuencia
 
 dicStr = {}
-    
+
 def Exist(palabra) -> bool:
     for key in dicStr:
         if key == palabra:
@@ -19,13 +19,6 @@ def StrToMap(str):
 
 StrToMap(input("Escribe una frase; "))
 
-def SeRepiteValor(elemento) -> int:
-    vecesRepetido = 0
-
-    for key in dicStr:
-        if dicStr[key] == elemento[0]:
-            vecesRepetido += 1
-    return vecesRepetido
 
 maximo_valor = max(dicStr.values())
 
@@ -42,6 +35,5 @@ if len(elementos_con_maximo_valor) > 1:
         print(f"{elemento}, {dicStr[elemento]}")
 else:
     print(f"{elementos_con_maximo_valor[0]}, {dicStr[elementos_con_maximo_valor[0]]}")
-
 
 # Como quieres que el te quiera si el que quiero que el quiera no me quiere como quiero que el quiera
