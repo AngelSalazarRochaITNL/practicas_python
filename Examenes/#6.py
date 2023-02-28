@@ -9,11 +9,10 @@ def mismosYDiferentes(l1,l2):
             if i == j:
                 lc.append(i)
             else:
-                for k in lnc:
-                    if k == i:
-                        if k == j:
-                # lnc.append(i)
-                # lnc.append(j)
+                lnc.append(i)
+                lnc.append(j)
+    setnc = set(lnc)
+    lnc = list(setnc)
     return lc,lnc
 
 print(mismosYDiferentes(l1,l2))
